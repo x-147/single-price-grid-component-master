@@ -30,12 +30,15 @@ body {
   grid-template-areas:
     'message message'
     'subscription reason';
+
+  box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 15%);
+  border-radius: 8px;
 }
 
 /* message grid area */
 
 .main-container > .message {
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
   background-color: white;
   grid-area: message;
 
@@ -91,7 +94,7 @@ body {
 /* subscription grid area */
 
 .main-container > .subscription {
-  border-radius: 0px 0px 0px 5px;
+  border-radius: 0px 0px 0px 8px;
   background-color: hsl(179, 62%, 43%);
   grid-area: subscription;
 
@@ -176,7 +179,7 @@ body {
 /* reason grid area */
 
 .main-container > .reason {
-  border-radius: 0px 0px 5px 0px;
+  border-radius: 0px 0px 8px 0px;
   background-color: hsl(179, 62%, 46%);
   grid-area: reason;
 }
