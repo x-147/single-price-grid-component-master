@@ -22,7 +22,7 @@ body {
 
 .main-container {
   height: 480px;
-  width: 640px;
+  max-width: 640px;
 
   display: grid;
   grid-template-rows: 1fr 1fr;
