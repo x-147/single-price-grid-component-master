@@ -125,7 +125,8 @@ body {
   height: 70%;
 }
 
-.subscription .text-box .heading {
+.subscription .text-box .heading,
+.reason .text-content .heading {
   font-size: 1.1rem;
   color: white;
   font-weight: 500;
@@ -176,6 +177,26 @@ body {
 
 .main-container > .reason {
   border-radius: 0px 0px 5px 0px;
-  background-color: hsl(179, 62%, 55%);
+  background-color: hsl(179, 62%, 46%);
   grid-area: reason;
+}
+
+.reason .text-content {
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* reason heading styling and spacing same */
+/* as subscription heading styling and spacing */
+
+.reason .description {
+  color: white;
+  opacity: 0.6;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.05rem;
 }
