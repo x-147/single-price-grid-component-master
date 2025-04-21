@@ -7,4 +7,36 @@
 body {
   font-family: 'Karla', sans-serif;
   font-optical-sizing: auto;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  height: 480px;
+  width: 640px;
+
+  background-color: aliceblue;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'message message'
+    'subscription reason';
+}
+
+.main-container > .message {
+  background-color: bisque;
+  grid-area: message;
+}
+
+.main-container > .subscription {
+  background-color: aquamarine;
+}
+
+.main-container > .reason {
+  background-color: brown;
 }
