@@ -94,6 +94,65 @@ body {
   border-radius: 0px 0px 0px 5px;
   background-color: hsl(179, 62%, 43%);
   grid-area: subscription;
+
+  /* centering the text-and-button-box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.subscription > .text-and-button-box {
+  height: 70%;
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* distribute space vertically */
+  justify-content: center;
+
+  /* not evenly spaced so not using */
+  /* justify-content: space-between; */
+
+  /* total height available for text content */
+  /* rest for signup button */
+  height: 70%;
+}
+
+.subscription .text-box .heading {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+
+  margin-bottom: 20px;
+}
+
+.subscription .text-box .pricing {
+  margin-bottom: 10px;
+}
+
+.subscription .text-box .pricing span:first-of-type {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.subscription .text-box .pricing span:last-of-type {
+  color: white;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.subscription .text-box .description {
+  color: white;
 }
 
 /* reason grid area */
