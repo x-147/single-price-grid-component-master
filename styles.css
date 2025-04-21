@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   font-optical-sizing: auto;
@@ -12,13 +16,13 @@ body {
   justify-content: center;
   align-content: center;
   height: 100vh;
+
+  background-color: hsl(204, 43%, 93%);
 }
 
 .main-container {
   height: 480px;
   width: 640px;
-
-  background-color: aliceblue;
 
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -28,15 +32,74 @@ body {
     'subscription reason';
 }
 
+/* message grid area */
+
 .main-container > .message {
-  background-color: bisque;
+  border-radius: 5px 5px 0px 0px;
+  background-color: white;
   grid-area: message;
+
+  /* centering the text-box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
+.main-container > .message .text-box {
+  margin: 40px;
+
+  display: flex;
+  flex-direction: column;
+  /* take equal space around the y-axis */
+  justify-content: center;
+
+  /* content is not equally spaced so */
+  /* justify-content: space-around; */
+
+  /* text-box height % of parent */
+  /* this is space available for use */
+  /* for text-box children */
+  height: 70%;
+}
+
+.message .text-box .heading {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  /* uneven spacing */
+  margin-bottom: 30px;
+}
+
+.message .text-box .subheading {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  /* uneven spacing */
+  margin-bottom: 10px;
+}
+
+.message .text-box .description {
+  line-height: 1.5rem;
+
+  font-weight: 500;
+  opacity: 0.3;
+}
+
+/* subscription grid area */
 
 .main-container > .subscription {
-  background-color: aquamarine;
+  border-radius: 0px 0px 0px 5px;
+  background-color: hsl(179, 62%, 43%);
+  grid-area: subscription;
 }
 
+/* reason grid area */
+
 .main-container > .reason {
-  background-color: brown;
+  border-radius: 0px 0px 5px 0px;
+  background-color: hsl(179, 62%, 55%);
+  grid-area: reason;
 }
