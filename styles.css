@@ -191,12 +191,12 @@ body {
 
 .reason .text-content {
   margin: 40px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  height: 100%;
 }
 
 /* reason heading styling and spacing same */
